@@ -1,5 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { ChakraProvider } from "@chakra-ui/react";
+import { BrowserRouter as Router } from "react-router-dom";
+import theme from "../src/libs/theme";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
@@ -10,14 +12,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
     return (
-        <div className="App">
-            <NavBar />
-            <Banner />
-            <Skills />
-            <Projects />
-            <Contact />
-            <Footer />
-        </div>
+        <ChakraProvider theme={theme}>
+            <Router>
+                <div className="App">
+                    <NavBar />
+                    <Banner />
+                    <Skills />
+                    <Projects />
+                    <Contact />
+                    <Footer />
+                </div>
+            </Router>
+        </ChakraProvider>
     );
 }
 
