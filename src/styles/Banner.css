@@ -1,0 +1,346 @@
+/************ Banner.jsx ************/
+
+.banner {
+    margin-top: 0;
+    padding: 220px 0 175px 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.banner p {
+    color: #3A3B3D;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+.banner button {
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+}
+  
+.banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+  
+.my_img {
+    box-shadow: inset 3px 3px 3px 9px rgb(255 255 255 / 40%);
+    justify-self: center;
+    animation: my_img_animate 8s ease-in-out infinite 1s;
+}
+  
+@keyframes my_img_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+  
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+.txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+}
+  
+.scrolldown {
+    --color: #4B9CD3;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5rem;
+}
+  
+.scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+}
+  
+
+@keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+  
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+  
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+  
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+}
+  
+.mouse {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.mousedown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+  
+.mousedown:nth-child(odd) {
+    animation: pulse 500ms ease infinite alternate;
+}
+  
+.mousedown:nth-child(even) {
+    animation: pulse 500ms ease infinite alternate 250ms;
+}
+  
+
+@keyframes pulse {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.5;
+    }
+}
+
+/***** HEADING *****/
+.heading h1:before {
+    content: '[';
+    margin-right: 1rem;
+}
+  
+
+.heading h1:after {
+    content: ']';
+}
+  
+@keyframes blink {
+    0% { opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+.heading h1:before, .heading h1:after {
+    letter-spacing: 0.8px;
+    
+    color: #4B9CD3;
+    font-size: 65px;
+    line-height: 40px;
+    
+    animation: blink 2s infinite;
+}
+  
+  
+.hello_button button {
+    background: #4B9CD3;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+  
+
+.hello_button button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+  
+
+.hello_button button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+  
+
+.hello_button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+  
+
+.hello_button:hover button svg {
+    transform: translateX(1.6em) rotate(45deg) scale(1.1);
+}
+  
+
+.hello_button:hover button span {
+    transform: translateX(7em);
+}
+  
+
+.hello_button button:active {
+    transform: scale(0.95);
+}
+  
+@keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+}
+
+
+/* RESUME BUTTON */
+.button_resume {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+  
+.resume {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.5em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+  
+.button_resume:hover .resume {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+  
+.button_resume:active .resume {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+  
+.cta {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+  
+/**** SOCIAL *****/
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.social-icon a {
+    transition: 0.3s ease-in-out;
+}
+  
+.social-icon a:hover {
+    color:#4B9CD3;
+}
+
+/* Medium Devices */
+@media screen and (max-width: 1024px) {
+    .banner {
+        padding: 180px 0 135px 0;
+    }
+}
+
+
+
+/* Small Devices */
+@media screen and (max-width: 600px) {
+    .banner h1 {
+        font-size: 45px;
+    }
+
+    .banner p {
+        font-size: 17px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .heading h1:before, .heading h1:after {
+        font-size: 45px;
+    }
+}

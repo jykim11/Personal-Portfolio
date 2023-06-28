@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/kim_junyeong_resume.pdf";
 import { useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { useColorMode } from "@chakra-ui/react";
 import my_img from "../assets/my_img.JPG";
+import "../styles/Banner.css";
 
 import "animate.css";
 
@@ -207,9 +208,9 @@ export const Banner = () => {
                     </Col>
                 </Row>
                 <div class="scrolldown">
-                    <div class="chevrons">
-                        <div class="chevrondown"></div>
-                        <div class="chevrondown"></div>
+                    <div class="mouse">
+                        <div class="mousedown"></div>
+                        <div class="mousedown"></div>
                     </div>
                 </div>
             </Container>

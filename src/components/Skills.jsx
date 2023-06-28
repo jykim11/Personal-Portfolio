@@ -7,6 +7,7 @@ import {
 import { AiFillApi } from "react-icons/ai";
 import { useColorMode } from "@chakra-ui/react";
 import TrackVisibility from "react-on-screen";
+import "../styles/Skills.css";
 
 export const Skills = () => {
     const { colorMode } = useColorMode();
@@ -30,9 +31,9 @@ export const Skills = () => {
                                             Skills
                                         </h2>
                                     </div>
-                                    <div className="experience_container">
+                                    <div className="skills_container">
                                         <div
-                                            className={`experience_frontend ${
+                                            className={`skills_frontend ${
                                                 colorMode === "dark"
                                                     ? "dark"
                                                     : "light"
@@ -53,38 +54,38 @@ export const Skills = () => {
                                             <div className="development_header">
                                                 <h3>Frontend Development</h3>
                                             </div>
-                                            <div className="experience_content">
-                                                <article className="experience_detail">
+                                            <div className="skills_content">
+                                                <article className="skills_detail">
                                                     <BsFillPatchCheckFill />
                                                     <div>
                                                         <h4>HTML</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
+                                                <article className="skills_detail">
                                                     <BsFillPatchCheckFill />
                                                     <div>
                                                         <h4>CSS</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
+                                                <article className="skills_detail">
                                                     <BsFillPatchCheckFill />
                                                     <div>
                                                         <h4>JavaScript</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
+                                                <article className="skills_detail">
                                                     <BsFillPatchCheckFill />
                                                     <div>
                                                         <h4>React</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
+                                                <article className="skills_detail">
                                                     <BsFillPatchCheckFill />
                                                     <div>
                                                         <h4>Angular</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
+                                                <article className="skills_detail">
                                                     <BsFillPatchCheckFill />
                                                     <div>
                                                         <h4>TypeScript</h4>
@@ -94,7 +95,7 @@ export const Skills = () => {
                                         </div>
 
                                         <div
-                                            className={`experience_backend ${
+                                            className={`skills_backend ${
                                                 colorMode === "dark"
                                                     ? "dark"
                                                     : "light"
@@ -115,7 +116,7 @@ export const Skills = () => {
                                                 <h3>Backend Development</h3>
                                             </div>
                                             <div
-                                                className="experience_content"
+                                                className="skills_content"
                                                 style={{
                                                     color:
                                                         colorMode === "dark"
@@ -123,68 +124,68 @@ export const Skills = () => {
                                                             : "#202023",
                                                 }}
                                             >
-                                                <article className="experience_detail">
-                                                    <BsCloudCheckFill className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsCloudCheckFill className="skills_detail-icon" />
                                                     <div>
                                                         <h4>Java</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <BsCloudCheckFill className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsCloudCheckFill className="skills_detail-icon" />
                                                     <div>
                                                         <h4>Python</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <BsCloudCheckFill className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsCloudCheckFill className="skills_detail-icon" />
                                                     <div>
                                                         <h4>C++</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <BsCloudCheckFill className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsCloudCheckFill className="skills_detail-icon" />
                                                     <div>
                                                         <h4>C</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <AiFillApi className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <AiFillApi className="skills_detail-icon" />
                                                     <div>
                                                         <h4>Node.js</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <AiFillApi className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <AiFillApi className="skills_detail-icon" />
                                                     <div>
                                                         <h4>Flask</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <AiFillApi className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <AiFillApi className="skills_detail-icon" />
                                                     <div>
                                                         <h4>FastAPI</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <BsDatabaseCheck className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsDatabaseCheck className="skills_detail-icon" />
                                                     <div>
                                                         <h4>MySQL</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <BsDatabaseCheck className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsDatabaseCheck className="skills_detail-icon" />
                                                     <div>
                                                         <h4>MongoDB</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <BsDatabaseCheck className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsDatabaseCheck className="skills_detail-icon" />
                                                     <div>
                                                         <h4>PostgresSQL</h4>
                                                     </div>
                                                 </article>
-                                                <article className="experience_detail">
-                                                    <BsDatabaseCheck className="experience_detail-icon" />
+                                                <article className="skills_detail">
+                                                    <BsDatabaseCheck className="skills_detail-icon" />
                                                     <div>
                                                         <h4>SQLite</h4>
                                                     </div>

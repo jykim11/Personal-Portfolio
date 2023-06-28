@@ -3,6 +3,9 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { useColorMode } from "@chakra-ui/react";
 import nonogram from "../assets/nonogram.png";
+import todo from "../assets/todo.png";
+import techonestop from "../assets/techonestop.png";
+import "../styles/Projects.css";
 
 export const Projects = () => {
     const { colorMode } = useColorMode();
@@ -53,14 +56,6 @@ export const Projects = () => {
                                                     <span class="bottom-key-1"></span>
                                                     <span class="bottom-key-2"></span>
                                                 </a>
-                                                <a class="fancy" href="">
-                                                    <span class="top-key"></span>
-                                                    <span class="text">
-                                                        Live Demo
-                                                    </span>
-                                                    <span class="bottom-key-1"></span>
-                                                    <span class="bottom-key-2"></span>
-                                                </a>
                                             </div>
                                             <p className="project_description">
                                                 Utilized model-view-controller
@@ -78,8 +73,105 @@ export const Projects = () => {
                                                 dependency to the POM file.
                                             </p>
                                         </div>
-                                        <div className="project_image_container">
+                                        <div className="project_image_container_nono">
                                             <img src={nonogram} alt="project" />
+                                        </div>
+
+                                        {/* 2nd project */}
+                                        <div className="project_description_container">
+                                            <h1>Tech One Stop</h1>
+
+                                            <div
+                                                className={`project_button ${
+                                                    colorMode === "dark"
+                                                        ? "dark"
+                                                        : "light"
+                                                }`}
+                                            >
+                                                <a
+                                                    class="fancy"
+                                                    href="https://tech-onestop.com/"
+                                                    target="_blank"
+                                                    rel="noreferrer noopener"
+                                                >
+                                                    <span class="top-key"></span>
+                                                    <span class="text">
+                                                        Live Demo
+                                                    </span>
+                                                    <span class="bottom-key-1"></span>
+                                                    <span class="bottom-key-2"></span>
+                                                </a>
+                                            </div>
+                                            <p className="project_description">
+                                                Comprehensive and user-friendly
+                                                tech one-stop website that
+                                                serves as a hub for all things
+                                                technology-related. The dynamic
+                                                website uses a combination of
+                                                HTML, CSS, and JavaScript to
+                                                ensure a visually appealing and
+                                                interactive user interface. Not
+                                                related for a specific business.
+                                            </p>
+                                        </div>
+                                        <div className="project_image_container_tech">
+                                            <img
+                                                src={techonestop}
+                                                alt="project"
+                                            />
+                                        </div>
+
+                                        {/* 3rd project */}
+                                        <div className="project_description_container">
+                                            <h1>To-Do Application</h1>
+
+                                            <ul className="project_list">
+                                                <li>JavaScript (EJS)</li>
+                                                <li>Node.js</li>
+                                                <li>MongoDB</li>
+                                            </ul>
+
+                                            <div
+                                                className={`project_button ${
+                                                    colorMode === "dark"
+                                                        ? "dark"
+                                                        : "light"
+                                                }`}
+                                            >
+                                                <a
+                                                    class="fancy"
+                                                    href="https://todoapp-junyeongkim-742fec4c73ca.herokuapp.com/"
+                                                    target="_blank"
+                                                    rel="noreferrer noopener"
+                                                >
+                                                    <span class="top-key"></span>
+                                                    <span class="text">
+                                                        Live Demo
+                                                    </span>
+                                                    <span class="bottom-key-1"></span>
+                                                    <span class="bottom-key-2"></span>
+                                                </a>
+                                            </div>
+                                            <p className="project_description">
+                                                Developed a user-friendly To-do
+                                                list application using
+                                                JavaScript, EJS for the
+                                                templating engine, Node.js for
+                                                the backend, and MongoDB as the
+                                                database. Application allows
+                                                users to efficiently organize
+                                                their tasks and manage their
+                                                schedules effortlessly. By
+                                                leveraging the power of Node.js
+                                                and MongoDB, the application
+                                                provides seamless data storage
+                                                and retrieval, ensuring that
+                                                users' to-do lists are securely
+                                                stored and easily accessible.
+                                            </p>
+                                        </div>
+                                        <div className="project_image_container_todo">
+                                            <img src={todo} alt="project" />
                                         </div>
                                     </div>
                                 </div>

@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import logo from "../assets/logo.png";
+import "../styles/Footer.css";
 
 export const Footer = () => {
     return (

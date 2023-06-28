@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import ThemeToggleButton from "./Theme-toggle-button";
+import "../styles/NavBar.css";
 
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";

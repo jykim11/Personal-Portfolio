@@ -1,0 +1,240 @@
+/************ Contacts Css ************/
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+
+.contact {
+    background: linear-gradient(90.21deg, #614385 -5.91%, #516395 111.58%);
+    padding: 60px 0 100px 0;
+}
+
+
+.contact img {
+    width: 80%;
+    margin: auto;
+}
+
+
+.contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin: 0 0 20px 0;
+    padding: 18px 10px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+}
+  
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+}
+  
+.form__field {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 11px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+  
+.form__field::placeholder {
+    color: transparent;
+}
+  
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+  
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+  
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+}
+  
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+}
+  
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+  
+
+.contact form button {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+
+.contact form button span {
+    z-index: 1;
+    position: relative;
+}
+
+
+.contact form button:hover {
+    color: #fff;
+}
+
+
+.contact form button::before {
+    content: "";
+    background: #121212;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form button:hover::before {
+    width: 100%;
+}
+  
+
+.contact img {
+    animation: updown 3s linear infinite;
+}
+  
+  @keyframes updown {
+    0% {
+      transform: translateY(-20px);
+    }
+  50% {
+      transform: translateY(20px);
+    }
+  100% {
+      transform: translateY(-20px);
+    }
+}
+  
+
+.inputbox {
+    position: relative;
+    width: 196px;
+}
+  
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+  
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+  
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+}
+  
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+  
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+    height: 44px;
+}
+
+
+/* Small Devices */
+@media screen and (max-width: 600px) {
+    .contact form input, .contact form textarea {
+        margin: 0 0 20px 0;
+        padding: 14px 10px;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .contact img {
+        width: 70%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form__group {
+        padding: 15px 0 0;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  }
