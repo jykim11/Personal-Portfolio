@@ -154,15 +154,15 @@
 }
   
 .mousedown:nth-child(odd) {
-    animation: pulse 500ms ease infinite alternate;
+    animation: pulse54012 500ms ease infinite alternate;
 }
   
 .mousedown:nth-child(even) {
-    animation: pulse 500ms ease infinite alternate 250ms;
+    animation: pulse54012 500ms ease infinite alternate 250ms;
 }
   
 
-@keyframes pulse {
+@keyframes pulse54012 {
     from {
       opacity: 0;
     }
