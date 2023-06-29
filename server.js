@@ -51,8 +51,9 @@ router.post("/contact", (req, res) => {
     });
 });
 
+app.use(express.static("./build"));
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./build/index.html"));
+    res.sendFile(path.join(__dirname, "/", "./build", "index.html"));
 });
 
 app.listen(port, () => console.log("Server Running"));
