@@ -50,15 +50,8 @@ router.post("/contact", (req, res) => {
     });
 });
 
-if (process.env.NODE_ENV === "production") {
-    // Exprees will serve up production assets
-    app.use(express.static("personal-portfolio/build"));
-
-    app.get("*", (req, res) => {
-        res.sendFile(
-            path.resolve(__dirname, "personal-portfolio", "build", "index.html")
-        );
-    });
-}
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./build/index.html"));
+});
 
 app.listen(port, () => console.log("Server Running"));
