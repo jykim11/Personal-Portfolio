@@ -4,7 +4,8 @@ import TrackVisibility from "react-on-screen";
 import { useColorMode } from "@chakra-ui/react";
 import nonogram from "../assets/nonogram.png";
 import todo from "../assets/todo.png";
-import techonestop from "../assets/techonestop.png";
+import tripTracker from "../assets/triptracker.png";
+
 import "../styles/Projects.css";
 
 export const Projects = () => {
@@ -69,7 +70,17 @@ export const Projects = () => {
 
 										{/* 2nd project */}
 										<div className="project_description_container">
-											<h1>Tech One Stop</h1>
+											<h1>TripTracker</h1>
+
+											<ul className="project_list">
+												<li>MongoDB</li>
+												<li>Express.js</li>
+												<li>React.js</li>
+												<li>Node.js</li>
+												<li>Google Maps API</li>
+												<li>Authentication</li>
+												<li>Authorization</li>
+											</ul>
 
 											<div
 												className={`project_button ${
@@ -78,7 +89,7 @@ export const Projects = () => {
 											>
 												<a
 													class="fancy"
-													href="https://tech-onestop.com/"
+													href="https://triptracker-client.onrender.com"
 													target="_blank"
 													rel="noreferrer noopener"
 												>
@@ -89,17 +100,24 @@ export const Projects = () => {
 												</a>
 											</div>
 											<p className="project_description">
-												Comprehensive and user-friendly tech
-												one-stop website that serves as a hub for
-												all things technology-related. The dynamic
-												website uses a combination of HTML, CSS, and
-												JavaScript to ensure a visually appealing
-												and interactive user interface. Not related
-												for a specific business.
+												TripTracker is a full-stack web application
+												designed to help users document and share
+												their travel experiences. Built using the
+												MERN stack (MongoDB, Express.js, React,
+												Node.js), TripTracker allows users to create
+												an account, log in, and manage a
+												personalized list of places they want to
+												visit or have visited. The application
+												includes robust authentication and
+												authorization mechanisms to ensure data
+												security and user privacy. Additionally,
+												TripTracker integrates the Google Maps API
+												to provide a dynamic and interactive map
+												view of all listed locations.
 											</p>
 										</div>
 										<div className="project_image_container_tech">
-											<img src={techonestop} alt="project" />
+											<img src={tripTracker} alt="project" />
 										</div>
 
 										{/* 3rd project */}
