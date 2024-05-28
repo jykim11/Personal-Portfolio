@@ -206,10 +206,10 @@ export const Banner = () => {
 						</TrackVisibility>
 					</Col>
 				</Row>
-				<div class="scrolldown">
-					<div class="mouse">
-						<div class="mousedown"></div>
-						<div class="mousedown"></div>
+				<div className="scrolldown">
+					<div className="mouse">
+						<div className="mousedown"></div>
+						<div className="mousedown"></div>
 					</div>
 				</div>
 			</Container>
