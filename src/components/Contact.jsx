@@ -79,7 +79,7 @@ export const Contact = () => {
 											: ""
 									}
 								>
-									<h2>Get In Touch</h2>
+									<h2 style={{ color: "white" }}>Get In Touch</h2>
 									<form onSubmit={handleSubmit}>
 										<Row>
 											<Col size={12} sm={6} className="px-1">
@@ -192,6 +192,7 @@ export const Contact = () => {
 																? "danger"
 																: "success"
 														}
+														style={{ color: "white" }}
 													>
 														{status.message}
 													</p>
