@@ -27,13 +27,16 @@ export const Contact = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setButtonText("Sending...");
-		let response = await fetch(`${process.env.WEBSITE_URL}/contact`, {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json;charset=utf-8",
-			},
-			body: JSON.stringify(formDetails),
-		});
+		let response = await fetch(
+			`https://personal-portfolio-rpcw.onrender.com/contact`,
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json;charset=utf-8",
+				},
+				body: JSON.stringify(formDetails),
+			}
+		);
 		setButtonText("Send");
 		let result = await response.json();
 		setFormDetails(formInitialDetails);
