@@ -3,6 +3,7 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const path = require("path");
+const job = require("./cron");
 require("dotenv").config();
 
 // server used to send send emails
@@ -60,3 +61,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => console.log("Server Running"));
+
+job.start();
