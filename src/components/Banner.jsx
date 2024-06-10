@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import resume from "../assets/Junyeong_Kim_resume.pdf";
+import UpdatedResume from "../assets/Junyeong_Kim_resume.pdf";
 import { useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { useColorMode } from "@chakra-ui/react";
@@ -121,7 +121,7 @@ export const Banner = () => {
 										<button className="button_resume">
 											<span class="resume">
 												<a
-													href={resume}
+													href={UpdatedResume}
 													target="_blank"
 													rel="noreferrer noopener"
 												>
