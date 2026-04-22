@@ -1,0 +1,91 @@
+/************ NavBar.jsx ************/
+/* Style for scrolling */
+nav.navbar.scrolled,
+nav.navbar.scrolled .navbar-link {
+  color: #fff !important;
+  padding: 30px 0;
+}
+
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+  opacity: 1;
+  color: #4B9CD3 !important;
+  cursor: pointer;
+
+}
+
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition:  0.32s ease-in-out;
+}
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #27374D;
+}
+
+.nav-logo.scrolled{
+  width: 50%;
+  height: auto;
+}
+
+nav.navbar a.navbar-brand {
+    width: 8%;
+}
+
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  position: relative;
+  letter-spacing: 1px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  color: var(--link-color);
+}
+
+span.navbar-text {
+    display: flex;
+    align-items: center;
+    
+}
+
+.social-icon a.social-link {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid #4F709C;
+}
+
+.navbar-toggler.collapsed {
+    color: #4B9CD3;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+/* End of NavBar.jsx */
+
+
+/* Small Devices */
+@media screen and (max-width: 600px) {
+
+    .navbar {
+      background-color: #27374D;
+    }
+  
+    nav.navbar .navbar-nav .nav-link.navbar-link {
+      color: white;
+    }
+  
+    .ms-auto.navbar-nav > .navbar-link.nav-link {
+      margin-bottom: 2rem;
+    }
+}

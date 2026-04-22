@@ -1,0 +1,171 @@
+/************ Skills Css ************/
+.skill {
+    padding: 0 0 135px 0;
+    position: relative;
+}
+
+
+.skill-bx {
+    /* background: #151515; */
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+}
+
+
+.skill h2 {
+      font-size: 45px;
+      font-weight: 700; 
+    text-align: center;
+}
+  
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    column-gap: 3rem;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+  
+.skills_container > div {
+    background: white;
+    padding: 2rem 2rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    height: 320px;
+}
+  
+.skills_frontend.dark, .skills_backend.dark {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(91, 91, 91, 0.5);
+    border: 1px solid white;
+}
+  
+.skills_container > div:hover {
+    height: auto;
+    border: 2px dashed #13294B;
+}
+  
+.skills_container > div:hover .skills_content {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+  
+  
+.development_header {
+    position : relative;
+    text-align: center;
+    top: 40%;
+    margin: auto;
+}
+  
+.skills_container > div:hover .development_header {
+    top: 0%;
+}
+  
+.development_header h3 {
+    max-width: 100%;
+    border-radius: 15px;
+    text-align: center;
+}
+  
+.skills_container > div h3 {
+    text-align:center;
+    margin-bottom: 2rem;
+    color:#4B9CD3;
+    font-size: 1.5rem;
+}
+  
+.skills_container > div h4 {
+    text-align:center;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 18px;
+    font-weight: 500;
+}
+  
+.skills_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    top : -140px;
+    padding : 10px 15px;
+    /* color : #111; */
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+}
+  
+.skills_detail {
+    display: flex;
+    gap: 1rem;
+}
+  
+
+.skills_detail-icon {
+    margin-top: 6px;
+}
+
+.red {
+    background-color: #ff605c;
+}
+   
+.yellow {
+    background-color: #ffbd44;
+}
+   
+.green {
+    background-color: #00ca4e;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.tools {
+    display: flex;
+    left: 0;
+}
+
+
+ /* Medium Devices */
+ @media screen and (max-width: 1024px) {
+    .skills_container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .skills_container > div {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+}
+
+
+/* Small Devices */
+@media screen and (max-width: 600px) {
+
+    .skills_container {
+      gap: 1rem;
+    }
+  
+    .skills_container > div {
+      width: 80%;
+      padding: 2rem 1rem;
+    }
+}
